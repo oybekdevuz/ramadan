@@ -20,7 +20,6 @@ async function bootstrap() {
   const document = SwaggerModule.createDocument(app, config);
   app.useGlobalPipes(new ValidationPipe());
   SwaggerModule.setup('/api/docs', app, document);
-  app.use('/', (req, res) => {res.redirect("https://ramadan.oybekdev.uz/api/docs")});
   await app.listen(port, () => {
     console.log(port);
   });
