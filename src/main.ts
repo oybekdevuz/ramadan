@@ -10,20 +10,17 @@ async function bootstrap() {
   app.use(cookieParser());
   app.setGlobalPrefix("api");
 
-  app.use('/', (req, res, next) => {
-    res.redirect('https://ramadan.oybekdev.uz/api/docs');
-  });
-
   const config = new DocumentBuilder()
     .setTitle('Ramadan Calendar 2024')
     .setDescription('REST API Documentation for donation to me: 9860 2701 0911 0345')
     .setVersion('1.0.0')
     .build();
 
+
   const document = SwaggerModule.createDocument(app, config);
   app.useGlobalPipes(new ValidationPipe());
   SwaggerModule.setup('/api/docs', app, document);
-
+  app.use('/', (req, res) => {res.redirect("https://ramadan.oybekdev.uz/api/docs")});
   await app.listen(port, () => {
     console.log(port);
   });
