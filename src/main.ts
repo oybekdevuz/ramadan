@@ -6,20 +6,27 @@ import { ValidationPipe } from '@nestjs/common';
 
 async function bootstrap() {
   const app = await NestFactory.create(AppModule);
-  const port = process.env.PORT
-  app.use(cookieParser())
-  app.setGlobalPrefix("api")
+  const port = process.env.PORT;
+  app.use(cookieParser());
+  app.setGlobalPrefix("api");
+
+  app.use('/', (req, res, next) => {
+    res.redirect('https://ramadan.oybekdev.uz/api/docs');
+  });
+
   const config = new DocumentBuilder()
-  .setTitle('Ramadan Calendar 2024')
-  .setDescription('REST API Documentation for donation to me: 9860 2701 0911 0345')
-  .setVersion('1.0.0')
-  .build();
-  
-  const documet = SwaggerModule.createDocument(app, config);
-  app.useGlobalPipes(new ValidationPipe())
-  SwaggerModule.setup('/api/docs', app, documet);
-  await app.listen(port,()=> {
-    console.log("Olov olov 🔥🔥🔥🔥",+port);
+    .setTitle('Ramadan Calendar 2024')
+    .setDescription('REST API Documentation for donation to me: 9860 2701 0911 0345')
+    .setVersion('1.0.0')
+    .build();
+
+  const document = SwaggerModule.createDocument(app, config);
+  app.useGlobalPipes(new ValidationPipe());
+  SwaggerModule.setup('/api/docs', app, document);
+
+  await app.listen(port, () => {
+    console.log(port);
   });
 }
+
 bootstrap();
