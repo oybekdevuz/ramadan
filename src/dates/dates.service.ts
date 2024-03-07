@@ -36,6 +36,6 @@ export class DatesService {
   }
 
    returnTimes () {
-    return `Avval: Angren (-3), Qo'qon (-7), Namangan (-10), Farg'ona (-10), Marg'ilon (-10), Andijon (-12),  Xonobod (-13), Keyin: Jizzax (+6), Guliston (+2), Denov (+6), Jomboy (+7), Samarqand (+9),  Shahrisabz (+10), Kattaqo'rg'on (+12), Qarshi (+14), Nurota (+14), Navoiy, (+16), Buxoro (+19), Xiva (+36), Nukus (+39), Mo'ynoq (+41)`;
+    return `Avval: Angren (-3), Qo'qon (-7), Namangan (-10), Farg'ona (-10), Marg'ilon (-10), Andijon (-12),  Xonobod (-13)\nKeyin: Jizzax (+6), Guliston (+2), Denov (+6), Jomboy (+7), Samarqand (+9),  Shahrisabz (+10), Kattaqo'rg'on (+12), Qarshi (+14), Nurota (+14), Navoiy, (+16), Buxoro (+19), Xiva (+36), Nukus (+39), Mo'ynoq (+41)`;
   }
 }
