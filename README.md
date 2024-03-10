@@ -1,4 +1,9 @@
-Ramadan calendar 2024 in uzbekistan
+Ramadan calendar 2024 in Uzbekistan
+
+Sorce: namozvaqti.uz
+Docs: https://ramadan.oybekdev.uz/api/docs
+
+my website: oybekdev.uz
 
 ## Endpoints
 
