@@ -1,0 +1,242 @@
+[
+  {
+    "day": 1,
+    "week": "shanba",
+    "melod_date": "1/3/2025",
+    "hijr_date": "1 Ramazon 1446",
+    "sehar": "05:40",
+    "iftar": "18:15"
+  },
+  {
+    "day": 2,
+    "week": "yakshanba",
+    "melod_date": "2/3/2025",
+    "hijr_date": "2 Ramazon 1446",
+    "sehar": "05:38",
+    "iftar": "18:17"
+  },
+  {
+    "day": 3,
+    "week": "dushanba",
+    "melod_date": "3/3/2025",
+    "hijr_date": "3 Ramazon 1446",
+    "sehar": "05:37",
+    "iftar": "18:18"
+  },
+  {
+    "day": 4,
+    "week": "seshanba",
+    "melod_date": "4/3/2025",
+    "hijr_date": "4 Ramazon 1446",
+    "sehar": "05:35",
+    "iftar": "18:19"
+  },
+  {
+    "day": 5,
+    "week": "chorshanba",
+    "melod_date": "5/3/2025",
+    "hijr_date": "5 Ramazon 1446",
+    "sehar": "05:33",
+    "iftar": "18:20"
+  },
+  {
+    "day": 6,
+    "week": "payshanba",
+    "melod_date": "6/3/2025",
+    "hijr_date": "6 Ramazon 1446",
+    "sehar": "05:32",
+    "iftar": "18:21"
+  },
+  {
+    "day": 7,
+    "week": "juma",
+    "melod_date": "7/3/2025",
+    "hijr_date": "7 Ramazon 1446",
+    "sehar": "05:30",
+    "iftar": "18:22"
+  },
+  {
+    "day": 8,
+    "week": "shanba",
+    "melod_date": "8/3/2025",
+    "hijr_date": "8 Ramazon 1446",
+    "sehar": "05:29",
+    "iftar": "18:24"
+  },
+  {
+    "day": 9,
+    "week": "yakshanba",
+    "melod_date": "9/3/2025",
+    "hijr_date": "9 Ramazon 1446",
+    "sehar": "05:27",
+    "iftar": "18:25"
+  },
+  {
+    "day": 10,
+    "week": "dushanba",
+    "melod_date": "10/3/2025",
+    "hijr_date": "10 Ramazon 1446",
+    "sehar": "05:25",
+    "iftar": "18:26"
+  },
+  {
+    "day": 11,
+    "week": "seshanba",
+    "melod_date": "11/3/2025",
+    "hijr_date": "11 Ramazon 1446",
+    "sehar": "05:24",
+    "iftar": "18:27"
+  },
+  {
+    "day": 12,
+    "week": "chorshanba",
+    "melod_date": "12/3/2025",
+    "hijr_date": "12 Ramazon 1446",
+    "sehar": "05:22",
+    "iftar": "18:28"
+  },
+  {
+    "day": 13,
+    "week": "payshanba",
+    "melod_date": "13/3/2025",
+    "hijr_date": "13 Ramazon 1446",
+    "sehar": "05:20",
+    "iftar": "18:29"
+  },
+  {
+    "day": 14,
+    "week": "juma",
+    "melod_date": "14/3/2025",
+    "hijr_date": "14 Ramazon 1446",
+    "sehar": "05:18",
+    "iftar": "18:30"
+  },
+  {
+    "day": 15,
+    "week": "shanba",
+    "melod_date": "15/3/2025",
+    "hijr_date": "15 Ramazon 1446",
+    "sehar": "05:17",
+    "iftar": "18:31"
+  },
+  {
+    "day": 16,
+    "week": "yakshanba",
+    "melod_date": "16/3/2025",
+    "hijr_date": "16 Ramazon 1446",
+    "sehar": "05:15",
+    "iftar": "18:32"
+  },
+  {
+    "day": 17,
+    "week": "dushanba",
+    "melod_date": "17/3/2025",
+    "hijr_date": "17 Ramazon 1446",
+    "sehar": "05:13",
+    "iftar": "18:34"
+  },
+  {
+    "day": 18,
+    "week": "seshanba",
+    "melod_date": "18/3/2025",
+    "hijr_date": "18 Ramazon 1446",
+    "sehar": "05:11",
+    "iftar": "18:35"
+  },
+  {
+    "day": 19,
+    "week": "chorshanba",
+    "melod_date": "19/3/2025",
+    "hijr_date": "19 Ramazon 1446",
+    "sehar": "05:10",
+    "iftar": "18:36"
+  },
+  {
+    "day": 20,
+    "week": "payshanba",
+    "melod_date": "20/3/2025",
+    "hijr_date": "20 Ramazon 1446",
+    "sehar": "05:08",
+    "iftar": "18:37"
+  },
+  {
+    "day": 21,
+    "week": "juma",
+    "melod_date": "21/3/2025",
+    "hijr_date": "21 Ramazon 1446",
+    "sehar": "05:06",
+    "iftar": "18:38"
+  },
+  {
+    "day": 22,
+    "week": "shanba",
+    "melod_date": "22/3/2025",
+    "hijr_date": "22 Ramazon 1446",
+    "sehar": "05:04",
+    "iftar": "18:39"
+  },
+  {
+    "day": 23,
+    "week": "yakshanba",
+    "melod_date": "23/3/2025",
+    "hijr_date": "23 Ramazon 1446",
+    "sehar": "05:02",
+    "iftar": "18:40"
+  },
+  {
+    "day": 24,
+    "week": "dushanba",
+    "melod_date": "24/3/2025",
+    "hijr_date": "24 Ramazon 1446",
+    "sehar": "05:01",
+    "iftar": "18:41"
+  },
+  {
+    "day": 25,
+    "week": "seshanba",
+    "melod_date": "25/3/2025",
+    "hijr_date": "25 Ramazon 1446",
+    "sehar": "04:59",
+    "iftar": "18:42"
+  },
+  {
+    "day": 26,
+    "week": "chorshanba",
+    "melod_date": "26/3/2025",
+    "hijr_date": "26 Ramazon 1446",
+    "sehar": "04:57",
+    "iftar": "18:43"
+  },
+  {
+    "day": 27,
+    "week": "payshanba",
+    "melod_date": "27/3/2025",
+    "hijr_date": "27 Ramazon 1446",
+    "sehar": "04:55",
+    "iftar": "18:44"
+  },
+  {
+    "day": 28,
+    "week": "juma",
+    "melod_date": "28/3/2025",
+    "hijr_date": "28 Ramazon 1446",
+    "sehar": "04:53",
+    "iftar": "18:46"
+  },
+  {
+    "day": 29,
+    "week": "shanba",
+    "melod_date": "29/3/2025",
+    "hijr_date": "29 Ramazon 1446",
+    "sehar": "04:52",
+    "iftar": "18:47"
+  },
+  {
+    "day": 30,
+    "week": "yakshanba",
+    "melod_date": "30/3/2025",
+    "hijr_date": "30 Ramazon 1446",
+    "sehar": "04:50",
+    "iftar": "18:48"
+  }
+]

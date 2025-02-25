@@ -17,6 +17,9 @@ export class Date {
     melod_date: string;
     
     @Prop({required: true})
+    region: string;
+    
+    @Prop({required: true})
     hijr_date: string;
   
     @Prop({required: true})

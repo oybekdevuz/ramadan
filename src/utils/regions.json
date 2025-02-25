@@ -1,0 +1,142 @@
+[
+  {
+    "name": "Toshkent",
+    "sehar": 0,
+    "iftar": 0
+  },
+  {
+    "name": "Andijon",
+    "sehar": -12,
+    "iftar": -12
+  },
+  {
+    "name": "Buxoro",
+    "sehar": 19,
+    "iftar": 20
+  },
+  {
+    "name": "Guliston",
+    "sehar": 2,
+    "iftar": 2
+  },
+  {
+    "name": "Jizzax",
+    "sehar": 6,
+    "iftar": 7
+  },
+  {
+    "name": "Navoiy",
+    "sehar": 16,
+    "iftar": 17
+  },
+  {
+    "name": "Namangan",
+    "sehar": -10,
+    "iftar": -9
+  },
+  {
+    "name": "Nukus",
+    "sehar": 38,
+    "iftar": 37
+  },
+  {
+    "name": "Samarqand",
+    "sehar": 9,
+    "iftar": 10
+  },
+  {
+    "name": "Termiz",
+    "sehar": 9,
+    "iftar": 11
+  },
+  {
+    "name": "Urganch",
+    "sehar": 34,
+    "iftar": 33
+  },
+  {
+    "name": "Fargona",
+    "sehar": -10,
+    "iftar": -10
+  },
+  {
+    "name": "Qarshi",
+    "sehar": 14,
+    "iftar": 16
+  },
+  {
+    "name": "Margilon",
+    "sehar": -10,
+    "iftar": -10
+  },
+  {
+    "name": "Xiva",
+    "sehar": 34,
+    "iftar": 33
+  },
+  {
+    "name": "Qoqon",
+    "sehar": -6,
+    "iftar": -6
+  },
+  {
+    "name": "Angren",
+    "sehar": -4,
+    "iftar": -3
+  },
+  {
+    "name": "Bekobod",
+    "sehar": -1,
+    "iftar": -1
+  },
+  {
+    "name": "Denov",
+    "sehar": 6,
+    "iftar": 8
+  },
+  {
+    "name": "Zomin",
+    "sehar": 3,
+    "iftar": 4
+  },
+  {
+    "name": "Zarafshon",
+    "sehar": 22,
+    "iftar": 22
+  },
+  {
+    "name": "Nurota",
+    "sehar": 14,
+    "iftar": 15
+  },
+  {
+    "name": "Pop",
+    "sehar": -7,
+    "iftar": -7
+  },
+  {
+    "name": "Urgut",
+    "sehar": 8,
+    "iftar": 10
+  },
+  {
+    "name": "Xazorasp",
+    "sehar": 23,
+    "iftar": 33
+  },
+  {
+    "name": "Chust",
+    "sehar": -8,
+    "iftar": -8
+  },
+  {
+    "name": "Shahrixon",
+    "sehar": -11,
+    "iftar": -11
+  },
+  {
+    "name": "Qorakol",
+    "sehar": 22,
+    "iftar": 3
+  }
+]

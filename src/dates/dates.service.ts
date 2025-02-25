@@ -4,38 +4,93 @@ import { UpdateDateDto } from './dto/update-date.dto';
 import { InjectModel } from '@nestjs/mongoose';
 import { Date, DateDocument } from './schema/date.schema';
 import { Model } from 'mongoose';
+import * as path from "path";
+import { readFileSync } from 'fs';
+import { DateQueryDto } from './dto/date-query.dto';
+import { GetAllQueryDto } from './dto/get-all-query.dto';
 
 @Injectable()
 export class DatesService {
   constructor(
     @InjectModel(Date.name) private readonly dateSchema: Model<DateDocument>,
-  ) {}
-  create(createDateDto: CreateDateDto) {
-    return this.dateSchema.create(createDateDto);
+  ) { }
+  async create() {
+    const filePathToRegions = path.join(process.cwd(), "src/utils/regions.json");
+    const filePathToBaseDate = path.join(process.cwd(), "src/utils/tashkent-taqvim.json");
+
+    const regionsData = readFileSync(filePathToRegions, "utf-8");
+    const BaseDate = readFileSync(filePathToBaseDate, "utf-8");
+
+    const regions = JSON.parse(regionsData);
+    const baseDates = JSON.parse(BaseDate);
+
+    for (const date of baseDates) {
+      for (const region of regions) {
+        const adjustedSehar = this.adjustTime(date.sehar, region.sehar);
+        const adjustedIftar = this.adjustTime(date.iftar, region.iftar);
+
+        await this.dateSchema.create({
+          day: date.day,
+          week: date.week,
+          melod_date: date.melod_date,
+          region: region.name,
+          hijr_date: date.hijr_date,
+          sehar: adjustedSehar,
+          iftar: adjustedIftar
+        });
+      }
+    }
+
+    return { data: true }
+  }
+
+  adjustTime(baseTime: string, offset: number) {
+    let [hours, minutes] = baseTime.split(":").map(Number);
+    minutes += offset;
+    if (minutes >= 60) {
+      hours += Math.floor(minutes / 60);
+      minutes = minutes % 60;
+    } else if (minutes < 0) {
+      hours -= Math.ceil(Math.abs(minutes) / 60);
+      minutes = 60 + (minutes % 60);
+    }
+    return `${String(hours).padStart(2, "0")}:${String(minutes).padStart(2, "0")}`;
   }
 
 
-  async findAll() {
-    const dates = await this.dateSchema.find();
-    return {message: 'Ramadan mubarak 🌙🕋 for donate 9860 2701 0911 0345', addition: this.returnTimes(), source: 'namozvaqti.uz', dates}
+
+  async findAll(query: GetAllQueryDto) {
+    const dates = await this.dateSchema.find({ region: query.region });
+    return { message: 'Ramadan mubarak 🌙🕋', source: 'namozvaqti.uz', dates }
   }
 
-  async findOne(@Query() query: any) {
-    const date = await this.dateSchema.findOne({melod_date: query.melod_date})
-    if(!date) throw new NotFoundException('Ramadan date not found') 
-    return {message: 'Ramadan mubarak 🌙🕋 for donate 9860 2701 0911 0345',addition: this.returnTimes(), source: 'namozvaqti.uz', date}
+  async findOne(query: DateQueryDto) {  
+    const searchParams: any = {
+      region: query.region
+    };
+  
+    if (query.melod_date) searchParams.melod_date = query.melod_date;
+    if (query.day) searchParams.day = query.day;
+  
+    const date = await this.dateSchema.findOne(searchParams);
+  
+    if (!date) throw new NotFoundException('Ramadan date not found');
+  
+    return { 
+      message: 'Ramadan mubarak 🌙🕋', 
+      source: 'namozvaqti.uz', 
+      date 
+    };
   }
+  
 
-  update(id: string, updateDateDto: UpdateDateDto) {
-    return this.dateSchema.findByIdAndUpdate(id, updateDateDto, {new: true});
-  }
+  // update(id: string, updateDateDto: UpdateDateDto) {
+  //   return this.dateSchema.findByIdAndUpdate(id, updateDateDto, { new: true });
+  // }
 
-  async remove(id: string) {
-    await this.dateSchema.findByIdAndDelete(id);
-    return 'Success';
-  }
+  // async remove(id: string) {
+  //   await this.dateSchema.findByIdAndDelete(id);
+  //   return 'Success';
+  // }
 
-   returnTimes () {
-    return `Avval: Angren (-3), Qo'qon (-7), Namangan (-10), Farg'ona (-10), Marg'ilon (-10), Andijon (-12),  Xonobod (-13)\nKeyin: Jizzax (+6), Guliston (+2), Denov (+6), Jomboy (+7), Samarqand (+9),  Shahrisabz (+10), Kattaqo'rg'on (+12), Qarshi (+14), Nurota (+14), Navoiy, (+16), Buxoro (+19), Xiva (+36), Nukus (+39), Mo'ynoq (+41)`;
-  }
 }
