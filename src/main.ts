@@ -12,7 +12,7 @@ async function bootstrap() {
 
   const config = new DocumentBuilder()
     .setTitle('Ramadan Calendar 2024')
-    .setDescription('REST API Documentation for donation to me: 9860 2701 0911 0345')
+    .setDescription('REST API Documentation')
     .setVersion('1.0.0')
     .build();
 
